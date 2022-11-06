@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <table border="1px solid">
+      <caption>
+        My table
+      </caption>
+      <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>Age</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>33</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mary</td>
+          <td>29</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Hector</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+      <tfooter>
+        <tr>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+        </tr>
+      </tfooter>
+    </table>
+
+    <hr />
+
+    <table border="2px solid">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td colspan="2">Basic Web Dev</td>
+          <td colspan="3">Basic JS</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td colspan="2">Basic Databases</td>
+          <td>Basic JS</td>
+          <td colspan="2">Advanced JS</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td colspan="5">Basic C#</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10-11</td>
+          <td rowspan="2">Basic Web Dev</td>
+          <td rowspan="2">Advanced JS</td>
+        </tr>
+        <tr>
+          <td>11-12</td>
+        </tr>
+        <tr>
+          <td>12-13</td>
+          <td>Basic C#</td>
+          <td rowspan="2">Basic C#</td>
+        </tr>
+        <tr>
+          <td>13-14</td>
+          <td>Basic Web Dev</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
