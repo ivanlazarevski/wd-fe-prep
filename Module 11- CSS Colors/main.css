@@ -1,0 +1,44 @@
+/* Background color and font color */
+
+header {
+  background-color: #2d3436;
+  color: whitesmoke;
+}
+
+header > .header-brand {
+    color: #fdcb6e;
+    font-size: 36px;
+}
+
+a {
+  color: #0984e3;
+}
+
+/* Types of colors */
+
+/* rgb */
+h1 {
+  color: rgb(9, 132, 227);
+}
+/* hex */
+h2 {
+  background-color: #2d3436;
+  color: #fdcb6e;
+  padding: 8px;
+}
+
+/* color name */
+footer {
+    background-color: rebeccapurple;
+    color: whitesmoke;
+}
+
+/* Opacity, Rgba */
+
+.contact {
+    background-color: rgba(116, 185, 255, 0.1)
+}
+
+.contact-card > h3 {
+    background-color: hsla(270,100%,33%,0.5);
+}

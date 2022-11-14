@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="What the page is about" />
+    <meta name="robot" content="index" />
+    <!-- https://www.woorank.com/en/edu/seo-guides/meta-robots-tag-seo -->
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Audio, Video, iframes</h1>
+    <hr />
+    <h2>Video Tags</h2>
+    <ul>
+      <li>Use the video element tag</li>
+      <li>src is used to represent the path to the video</li>
+    </ul>
+    <p style="color: red; font-size: 20px">
+      Don't put autoplay or loop on your videos. I have an VSCode extension that
+      tells me who added what in the code.
+    </p>
+    <video
+      controls
+      width="640px"
+      height="480px"
+      src="/assets/particle-accelerator.mp4"
+      type="video/mp4"
+      preload="none"
+    >
+      Your browser does not support the video tag.
+    </video>
+    <h2>Audio Tags</h2>
+    <p>Similar rules apply</p>
+    <audio src="/assets/01_Track_1.wma" controls></audio>
+    <h2>iframe</h2>
+    <iframe
+      height="480px"
+      width="100%"
+      src="https://www.wikipedia.org/"
+      frameborder="0"
+    ></iframe>
+    <hr />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/no4luPP6t9c"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+  <!-- Without a viewport meta tag, mobile devices render pages at typical desktop
+    screen widths and then scale the pages down, making them difficult to read.
+    Setting the viewport meta tag lets you control the width and scaling of the
+    viewport so that it's sized correctly on all devices. -->
+
+  <!-- The width=device-width part sets the width of the page to follow the
+    screen-width of the device (which will vary depending on the device). -->
+</html>

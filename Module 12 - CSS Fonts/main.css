@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+html {
+  /* This makes 1rem = 10px. Easier to calculate rem */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Righteous", cursive;
+}
+
+.header-brand {
+  font-family: "Righteous", cursive;
+  color: #2d3436;
+  font-size: 3rem;
+}
+
+/* Font Size Property */
+/* Absolute Size */
+.font-s {
+  font-size: small;
+}
+.font-l {
+  font-size: large;
+}
+.font-xl {
+  font-size: x-large;
+}
+/* Relative Size */
+.smaller {
+  font-size: smaller;
+}
+.larger {
+  font-size: larger;
+}
+
+/* Length */
+/* Absolute and relative lengths */
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+main {
+  min-height: 100vh;
+  /* Percentage */
+  width: 50%;
+}
+
+/* Font Weight */
+/* Keyword font weight */
+.font-bold {
+  font-weight: bold;
+}
+/* Value Font Weight */
+.w800 {
+  font-weight: 800;
+}
+.w300 {
+  font-weight: 300;
+}
+
+/* Font Style */
+/* Italic, oblque, normal */
+.oblique {
+  font-style: oblique;
+}
+.italic {
+  font-style: italic;
+}
+
+/* Text Transform */
+/* Uppercase, Lowercase, capitalize */
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Text Decoration */
+/* style: solid, double, dotted, dashed, wavy */
+/* line:  none, underline, overline, line-through, blink*/
+/* underline overline */
+/* color: */
+/*text decoration thickness */
+.decorated {
+  text-decoration-style: double;
+  text-decoration-line: underline overline;
+  text-decoration-color: rebeccapurple;
+  font-size: 2rem;
+  text-decoration-thickness: 2px;
+}
+
+/* Line Height */
+/* Letter Spacing & Word Spacing*/
+
+.line-height {
+  line-height: 4rem;
+}
+.letter-spacing {
+  letter-spacing: 2rem;
+  background-color: #2d3436;
+  color: #00b894;
+}
+.word-spacing {
+  word-spacing: 2rem;
+  background-color: #2d3436;
+  color: #fdcb6e;
+}
+
+/* Text Align */
+/* left, right, center, justify, justify-all, start, end */
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
+.center-align {
+  text-align: center;
+  background-color: #2d3436;
+  color: #fdcb6e;
+  padding: 1rem;
+}
+
+/* Vertical Align */
+/* inline, inline-block, table-cell */
+
+/* Text Shadow */
+.text-shadow > p {
+    font-size: 2.4rem;
+    color: #6c5ce7;
+    text-shadow: 2px 2px 0px #fdcb6e;
+    background-color: #2d3436;
+}
+
+/* ::first-letter, ::first-line */
+.text-shadow > p::first-letter {
+    font-size: 8rem;
+}
