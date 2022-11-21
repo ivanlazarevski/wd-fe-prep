@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* General Styling */
+:root {
+  --color-black: #1e1e1e;
+  --color-white: #f5f5f5;
+  --color-primary: #e84393;
+  --color-primary--light: #fd79a8;
+  --color-accent: #fdcb6e;
+  --font-display: "Orbitron", cursive;
+  --font-text: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* Font Styling */
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2.8rem;
+  font-style: italic;
+}
+h4 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+a:visited {
+  color: var(--color-primary--light);
+}
+
+a:hover,
+a:active {
+  color: var(--color-accent);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Styles */
+.header-brand {
+  font-size: 3rem;
+  font-family: var(--font-display);
+}
+
+.header-brand > span {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+/* Hero Section */
+h1.hero-heading ~ p {
+  line-height: 3rem;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.hero-fine {
+  color: var(--color-primary);
+  font-style: italic;
+  word-spacing: 2rem;
+  text-shadow: 1px 1px 0px var(--color-accent);
+}
+
+img {
+  width: 100%;
+  box-shadow: 0px 0px 4px var(--color-accent);
+}
+
+/* Section Styles */
+
+article.main-article {
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  box-shadow: 0px 0px 4px var(--color-accent);
+}
+
+article.secondary-article {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+.secondary-article > p {
+  font-size: 2rem;
+  text-align: justify;
+}
