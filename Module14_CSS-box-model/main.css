@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  /* This is margin and padding on all 4 sides */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* By default in the CSS box model, the width and height you assign to an element is applied only to the element's content box. */
+  /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
+    If you set an element's width to 100 pixels, 
+    that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width.  */
+}
+
+/* General Styling */
+:root {
+  --color-black: #1e1e1e;
+  --color-white: #f5f5f5;
+  --color-primary: #e84393;
+  --color-primary--light: #fd79a8;
+  --color-accent: #fdcb6e;
+  --font-display: "Orbitron", cursive;
+  --font-text: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* Font Styling */
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 2.8rem;
+  font-style: italic;
+}
+h4 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+a:visited {
+  color: var(--color-primary--light);
+}
+
+a:hover,
+a:active {
+  color: var(--color-accent);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  /* display: inline; */
+  display: inline-block;
+  /* Compared to display: inline , the major difference is that display: inline-block allows to set a width and height on the element. */
+  margin-right: 1rem;
+}
+
+img {
+  box-shadow: 0px 0px 4px var(--color-accent);
+}
+
+/* Header */
+
+.header-brand {
+  font-size: 3rem;
+  font-family: var(--font-display);
+  color: #fdcb6e;
+  cursor: pointer;
+}
+
+/* Margin, Padding, Border */
+.header-nav__list {
+  list-style: none;
+}
+
+header {
+  padding: 2rem;
+}
+
+main {
+  /* This is up-down and left-right */
+  margin: 2rem 0;
+  padding: 0 4rem;
+}
+
+.card-img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.card {
+    border: 2px solid var(--color-accent);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.secondary-card {
+    background-color: #e84393;
+    color: #1e1e1e;
+}
+
+p.fixed-text {
+    height: 100px;
+    font-size: 1.8rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+}
