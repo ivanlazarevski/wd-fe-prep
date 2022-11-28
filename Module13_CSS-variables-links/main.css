@@ -117,3 +117,13 @@ article.secondary-article {
   font-size: 2rem;
   text-align: justify;
 }
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav > ul {
+  display: flex;
+  gap: 1rem;
+} */

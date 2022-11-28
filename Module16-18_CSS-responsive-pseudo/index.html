@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSA Application</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-brand">PSA Release</div>
+      <nav class="header-nav">
+        <ul class="main-menu">
+          <li>Settings</li>
+          <li>
+            Profile
+            <ul class="profile-list">
+              <li>Settings</li>
+              <li>Theme</li>
+              <li>History</li>
+            </ul>
+          </li>
+          <li>Exit</li>
+        </ul>
+      </nav>
+      <div class="hamburger-nav">
+        <input class="hamburger-checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li>Settings</li>
+          <li>Profile</li>
+          <li>Exit</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="content-section">
+        <h2>Create a new PSA</h2>
+        <form class="form">
+          <div class="main-input">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" autocomplete="off" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title" autocomplete="off" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+          </div>
+        </form>
+      </section>
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul>
+            <li>Releases</li>
+            <li>Drafts</li>
+            <li>Content</li>
+            <li>Registry</li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+    <footer></footer>
+  </body>
+</html>
