@@ -1,0 +1,52 @@
+https://cssgrid-generator.netlify.app/
+
+PARENT RULES
+display: grid;
+grid-template-columns
+grid-template-rows
+
+Using grid-template-columns with the repeat function, create eight columns each with 12.5% width. This way you won't overwater your garden.
+grid-template-columns: repeat(5, 12.5%);
+grid-template-columns: 100px 3em 40%;
+
+Grid also introduces a new unit, the fractional fr. Each fr unit allocates one share of the available space. For example, if two elements are set to 1fr and 3fr respectively, the space is divided into 4 equal shares; the first element occupies 1/4 and the second element 3/4 of any leftover space.
+grid-template-columns: 1fr 5fr;
+grid-template-columns: 50px 1fr 1fr 1fr 50px;
+
+CHILD RULES (CAN HAVE POSITIVE AND NEGATIVE VALUES)
+(DONT FUCKING EXPERIMENT WITH NEGATIVES PLEASE)
+grid-column-start: 1
+grid-column-end: 3
+
+grid-row-start
+grid-row-end
+
+Instead of defining a grid item based on the start and end positions of the grid lines, you can define it based on your desired column width using the span keyword. Keep in mind that span 
+only works with positive values.
+
+grid-column-end: span 2;.
+
+grid-column (COMBINES grid-column-start, grid-column-end) (4/6)
+grid-column: 2/ span 3;
+
+
+grid-row-start
+grid-row-end
+grid-row
+
+
+grid-area:  grid-area accepts four values separated by slashes: grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end.
+
+order
+THIS CAN ALSO BE SHITTY TO WORK WITH
+If grid items aren't explicitly placed with grid-area, grid-column, grid-row, etc., they are automatically placed according to their order in the source code. We can override this using the order property, which is one of the advantages of grid over table-based layout.
+
+By default, all grid items have an order of 0, but this can be set to any positive or negative value, similar to z-index.
+
+Right now, the carrots in the second column are being poisoned and the weeds in the last column are being watered. Change the order value of the poison to fix this right away!
+
+gg24 grid-template-columns: 50px 1fr 1fr 1fr 50px;
+gg25 grid-template-columns: 75px 3fr 2fr;
+gg26 grid-template-rows: repeat(4, 12.5px);
+gg27 grid-template: 60% 40% / 200px;
+gg28 grid-template: 1fr 50px / 1fr 4fr;
